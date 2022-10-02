@@ -58,4 +58,6 @@
 #[cfg(any(avr_mcu_atmega48, feature = "all-mcus"))] pub mod atmega48;
 #[cfg(avr_mcu_atmega48)] pub use self::atmega48 as current;
 
-
+/// The ATmega128rfa1.
+#[cfg(any(avr_mcu_atmega128rfa1, feature = "all-mcus"))] pub mod atmega128rfa1;
+#[cfg(avr_mcu_atmega128rfa1)] pub use self::atmega128rfa1 as current;
