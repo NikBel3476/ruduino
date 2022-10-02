@@ -1010,6 +1010,33 @@ impl Register for PIND {
     const ADDRESS: *mut u8 = 0x29 as *mut u8;
 }
 #[allow(non_camel_case_types)]
+pub struct PORTE;
+
+impl Register for PORTE {
+	type T = u8;
+	const ADDRESS: *mut u8 = 0x2e as *mut u8;
+}
+#[allow(non_camel_case_types)]
+pub struct DDRE;
+
+impl DDRE {
+}
+
+impl Register for DDRE {
+    type T = u8;
+    const ADDRESS: *mut u8 = 0x2d as *mut u8;
+}
+#[allow(non_camel_case_types)]
+pub struct PINE;
+
+impl PINE {
+}
+
+impl Register for PINE {
+    type T = u8;
+    const ADDRESS: *mut u8 = 0x2C as *mut u8;
+}
+#[allow(non_camel_case_types)]
 pub struct OCR0B;
 
 impl OCR0B {
