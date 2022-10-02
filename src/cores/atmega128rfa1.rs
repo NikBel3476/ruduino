@@ -2245,7 +2245,111 @@ pub mod port {
 			const MASK: u8 = 1<<7;
 	}
 
-		pub struct F0;
+	pub struct E0;
+
+	impl Pin for E0 {
+		/// Port B Data Register.
+		type PORT = PORTE;
+		/// Port B Data Direction Register.
+		type DDR = DDRE;
+		/// Port B Input Pins.
+		type PIN = PINE;
+		/// PB0
+		const MASK: u8 = 1<<0;
+	}
+
+	pub struct E1;
+
+	impl Pin for E1 {
+		/// Port B Data Register.
+		type PORT = PORTE;
+		/// Port B Data Direction Register.
+		type DDR = DDRE;
+		/// Port B Input Pins.
+		type PIN = PINE;
+		/// PB1
+		const MASK: u8 = 1<<1;
+	}
+
+	pub struct E2;
+
+	impl Pin for E2 {
+			/// Port B Data Register.
+			type PORT = PORTE;
+			/// Port B Data Direction Register.
+			type DDR = DDRE;
+			/// Port B Input Pins.
+			type PIN = PINE;
+			/// PB2
+			const MASK: u8 = 1<<2;
+	}
+
+	pub struct E3;
+
+	impl Pin for E3 {
+			/// Port B Data Register.
+			type PORT = PORTE;
+			/// Port B Data Direction Register.
+			type DDR = DDRE;
+			/// Port B Input Pins.
+			type PIN = PINE;
+			/// PB3
+			const MASK: u8 = 1<<3;
+	}
+
+	pub struct E4;
+
+	impl Pin for E4 {
+			/// Port B Data Register.
+			type PORT = PORTE;
+			/// Port B Data Direction Register.
+			type DDR = DDRE;
+			/// Port B Input Pins.
+			type PIN = PINE;
+			/// PB4
+			const MASK: u8 = 1<<4;
+	}
+
+	pub struct E5;
+
+	impl Pin for E5 {
+			/// Port B Data Register.
+			type PORT = PORTE;
+			/// Port B Data Direction Register.
+			type DDR = DDRE;
+			/// Port B Input Pins.
+			type PIN = PINE;
+			/// PB5
+			const MASK: u8 = 1<<5;
+	}
+
+	pub struct E6;
+
+	impl Pin for E6 {
+			/// Port B Data Register.
+			type PORT = PORTE;
+			/// Port B Data Direction Register.
+			type DDR = DDRE;
+			/// Port B Input Pins.
+			type PIN = PINE;
+			/// PB6
+			const MASK: u8 = 1<<6;
+	}
+
+	pub struct E7;
+
+	impl Pin for E7 {
+			/// Port B Data Register.
+			type PORT = PORTE;
+			/// Port B Data Direction Register.
+			type DDR = DDRE;
+			/// Port B Input Pins.
+			type PIN = PINE;
+			/// PB7
+			const MASK: u8 = 1<<7;
+	}
+
+	pub struct F0;
 
 	impl Pin for F0 {
 		/// Port B Data Register.
