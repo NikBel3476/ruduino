@@ -929,6 +929,33 @@ impl Register for DIDR1 {
 	const ADDRESS: *mut u8 = 0x7f as *mut u8;
 }
 #[allow(non_camel_case_types)]
+pub struct PORTA;
+
+impl PORTA {
+}
+
+impl Register for PORTA {
+    type T = u8;
+    const ADDRESS: *mut u8 = 0x22 as *mut u8;
+}
+#[allow(non_camel_case_types)]
+pub struct DDRA;
+
+impl Register for DDRA {
+	type T = u8;
+	const ADDRESS: *mut u8 = 0x21 as *mut u8;
+}
+#[allow(non_camel_case_types)]
+pub struct PINA;
+
+impl PINA {
+}
+
+impl Register for PINA {
+    type T = u8;
+    const ADDRESS: *mut u8 = 0x20 as *mut u8;
+}
+#[allow(non_camel_case_types)]
 pub struct PORTB;
 
 impl PORTB {
