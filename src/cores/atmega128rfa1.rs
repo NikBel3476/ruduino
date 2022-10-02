@@ -1829,6 +1829,110 @@ pub mod port {
 	use super::*;
 	use crate::Pin;
 
+	pub struct A0;
+
+	impl Pin for A0 {
+		/// Port B Data Register.
+		type PORT = PORTA;
+		/// Port B Data Direction Register.
+		type DDR = DDRA;
+		/// Port B Input Pins.
+		type PIN = PINA;
+		/// PB0
+		const MASK: u8 = 1<<0;
+	}
+
+	pub struct A1;
+
+	impl Pin for A1 {
+		/// Port B Data Register.
+		type PORT = PORTA;
+		/// Port B Data Direction Register.
+		type DDR = DDRA;
+		/// Port B Input Pins.
+		type PIN = PINA;
+		/// PB1
+		const MASK: u8 = 1<<1;
+	}
+
+	pub struct A2;
+
+	impl Pin for A2 {
+			/// Port B Data Register.
+			type PORT = PORTA;
+			/// Port B Data Direction Register.
+			type DDR = DDRA;
+			/// Port B Input Pins.
+			type PIN = PINA;
+			/// PB2
+			const MASK: u8 = 1<<2;
+	}
+
+	pub struct A3;
+
+	impl Pin for A3 {
+			/// Port B Data Register.
+			type PORT = PORTA;
+			/// Port B Data Direction Register.
+			type DDR = DDRA;
+			/// Port B Input Pins.
+			type PIN = PINA;
+			/// PB3
+			const MASK: u8 = 1<<3;
+	}
+
+	pub struct A4;
+
+	impl Pin for A4 {
+			/// Port B Data Register.
+			type PORT = PORTA;
+			/// Port B Data Direction Register.
+			type DDR = DDRA;
+			/// Port B Input Pins.
+			type PIN = PINA;
+			/// PB4
+			const MASK: u8 = 1<<4;
+	}
+
+	pub struct A5;
+
+	impl Pin for A5 {
+			/// Port B Data Register.
+			type PORT = PORTA;
+			/// Port B Data Direction Register.
+			type DDR = DDRA;
+			/// Port B Input Pins.
+			type PIN = PINA;
+			/// PB5
+			const MASK: u8 = 1<<5;
+	}
+
+	pub struct A6;
+
+	impl Pin for A6 {
+			/// Port B Data Register.
+			type PORT = PORTA;
+			/// Port B Data Direction Register.
+			type DDR = DDRA;
+			/// Port B Input Pins.
+			type PIN = PINA;
+			/// PB6
+			const MASK: u8 = 1<<6;
+	}
+
+	pub struct A7;
+
+	impl Pin for A7 {
+			/// Port B Data Register.
+			type PORT = PORTA;
+			/// Port B Data Direction Register.
+			type DDR = DDRA;
+			/// Port B Input Pins.
+			type PIN = PINA;
+			/// PB7
+			const MASK: u8 = 1<<7;
+	}
+
 	pub struct B0;
 
 	impl Pin for B0 {
@@ -1896,250 +2000,354 @@ pub mod port {
 
 	pub struct B5;
 
-    impl Pin for B5 {
-        /// Port B Data Register.
-        type PORT = PORTB;
-        /// Port B Data Direction Register.
-        type DDR = DDRB;
-        /// Port B Input Pins.
-        type PIN = PINB;
-        /// PB5
-        const MASK: u8 = 1<<5;
-    }
+	impl Pin for B5 {
+			/// Port B Data Register.
+			type PORT = PORTB;
+			/// Port B Data Direction Register.
+			type DDR = DDRB;
+			/// Port B Input Pins.
+			type PIN = PINB;
+			/// PB5
+			const MASK: u8 = 1<<5;
+	}
 
-    pub struct B6;
+	pub struct B6;
 
-    impl Pin for B6 {
-        /// Port B Data Register.
-        type PORT = PORTB;
-        /// Port B Data Direction Register.
-        type DDR = DDRB;
-        /// Port B Input Pins.
-        type PIN = PINB;
-        /// PB6
-        const MASK: u8 = 1<<6;
-    }
+	impl Pin for B6 {
+			/// Port B Data Register.
+			type PORT = PORTB;
+			/// Port B Data Direction Register.
+			type DDR = DDRB;
+			/// Port B Input Pins.
+			type PIN = PINB;
+			/// PB6
+			const MASK: u8 = 1<<6;
+	}
 
-    pub struct B7;
+	pub struct B7;
 
-    impl Pin for B7 {
-        /// Port B Data Register.
-        type PORT = PORTB;
-        /// Port B Data Direction Register.
-        type DDR = DDRB;
-        /// Port B Input Pins.
-        type PIN = PINB;
-        /// PB7
-        const MASK: u8 = 1<<7;
-    }
+	impl Pin for B7 {
+			/// Port B Data Register.
+			type PORT = PORTB;
+			/// Port B Data Direction Register.
+			type DDR = DDRB;
+			/// Port B Input Pins.
+			type PIN = PINB;
+			/// PB7
+			const MASK: u8 = 1<<7;
+	}
 
-		pub struct C0;
+	pub struct C0;
 
-    impl Pin for C0 {
-        /// Port C Data Register.
-        type PORT = PORTC;
-        /// Port C Data Direction Register.
-        type DDR = DDRC;
-        /// Port C Input Pins.
-        type PIN = PINC;
-        /// PC0
-        const MASK: u8 = 1<<0;
-    }
+	impl Pin for C0 {
+			/// Port C Data Register.
+			type PORT = PORTC;
+			/// Port C Data Direction Register.
+			type DDR = DDRC;
+			/// Port C Input Pins.
+			type PIN = PINC;
+			/// PC0
+			const MASK: u8 = 1<<0;
+	}
 
-    pub struct C1;
+	pub struct C1;
 
-    impl Pin for C1 {
-        /// Port C Data Register.
-        type PORT = PORTC;
-        /// Port C Data Direction Register.
-        type DDR = DDRC;
-        /// Port C Input Pins.
-        type PIN = PINC;
-        /// PC1
-        const MASK: u8 = 1<<1;
-    }
+	impl Pin for C1 {
+			/// Port C Data Register.
+			type PORT = PORTC;
+			/// Port C Data Direction Register.
+			type DDR = DDRC;
+			/// Port C Input Pins.
+			type PIN = PINC;
+			/// PC1
+			const MASK: u8 = 1<<1;
+	}
 
-    pub struct C2;
+	pub struct C2;
 
-    impl Pin for C2 {
-        /// Port C Data Register.
-        type PORT = PORTC;
-        /// Port C Data Direction Register.
-        type DDR = DDRC;
-        /// Port C Input Pins.
-        type PIN = PINC;
-        /// PC2
-        const MASK: u8 = 1<<2;
-    }
+	impl Pin for C2 {
+			/// Port C Data Register.
+			type PORT = PORTC;
+			/// Port C Data Direction Register.
+			type DDR = DDRC;
+			/// Port C Input Pins.
+			type PIN = PINC;
+			/// PC2
+			const MASK: u8 = 1<<2;
+	}
 
-    pub struct C3;
+	pub struct C3;
 
-    impl Pin for C3 {
-        /// Port C Data Register.
-        type PORT = PORTC;
-        /// Port C Data Direction Register.
-        type DDR = DDRC;
-        /// Port C Input Pins.
-        type PIN = PINC;
-        /// PC3
-        const MASK: u8 = 1<<3;
-    }
+	impl Pin for C3 {
+			/// Port C Data Register.
+			type PORT = PORTC;
+			/// Port C Data Direction Register.
+			type DDR = DDRC;
+			/// Port C Input Pins.
+			type PIN = PINC;
+			/// PC3
+			const MASK: u8 = 1<<3;
+	}
 
-    pub struct C4;
+	pub struct C4;
 
-    impl Pin for C4 {
-        /// Port C Data Register.
-        type PORT = PORTC;
-        /// Port C Data Direction Register.
-        type DDR = DDRC;
-        /// Port C Input Pins.
-        type PIN = PINC;
-        /// PC4
-        const MASK: u8 = 1<<4;
-    }
+	impl Pin for C4 {
+			/// Port C Data Register.
+			type PORT = PORTC;
+			/// Port C Data Direction Register.
+			type DDR = DDRC;
+			/// Port C Input Pins.
+			type PIN = PINC;
+			/// PC4
+			const MASK: u8 = 1<<4;
+	}
 
-    pub struct C5;
+	pub struct C5;
 
-    impl Pin for C5 {
-        /// Port C Data Register.
-        type PORT = PORTC;
-        /// Port C Data Direction Register.
-        type DDR = DDRC;
-        /// Port C Input Pins.
-        type PIN = PINC;
-        /// PC5
-        const MASK: u8 = 1<<5;
-    }
+	impl Pin for C5 {
+			/// Port C Data Register.
+			type PORT = PORTC;
+			/// Port C Data Direction Register.
+			type DDR = DDRC;
+			/// Port C Input Pins.
+			type PIN = PINC;
+			/// PC5
+			const MASK: u8 = 1<<5;
+	}
 
-    pub struct C6;
+	pub struct C6;
 
-    impl Pin for C6 {
-        /// Port C Data Register.
-        type PORT = PORTC;
-        /// Port C Data Direction Register.
-        type DDR = DDRC;
-        /// Port C Input Pins.
-        type PIN = PINC;
-        /// PC6
-        const MASK: u8 = 1<<6;
-    }
+	impl Pin for C6 {
+			/// Port C Data Register.
+			type PORT = PORTC;
+			/// Port C Data Direction Register.
+			type DDR = DDRC;
+			/// Port C Input Pins.
+			type PIN = PINC;
+			/// PC6
+			const MASK: u8 = 1<<6;
+	}
 
-		pub struct C7;
+	pub struct C7;
 
-    impl Pin for C7 {
-        /// Port C Data Register.
-        type PORT = PORTC;
-        /// Port C Data Direction Register.
-        type DDR = DDRC;
-        /// Port C Input Pins.
-        type PIN = PINC;
-        /// PC6
-        const MASK: u8 = 1<<7;
-    }
+	impl Pin for C7 {
+			/// Port C Data Register.
+			type PORT = PORTC;
+			/// Port C Data Direction Register.
+			type DDR = DDRC;
+			/// Port C Input Pins.
+			type PIN = PINC;
+			/// PC6
+			const MASK: u8 = 1<<7;
+	}
 
-		pub struct D0;
+	pub struct D0;
 
-    impl Pin for D0 {
-        /// Port D Data Register.
-        type PORT = PORTD;
-        /// Port D Data Direction Register.
-        type DDR = DDRD;
-        /// Port D Input Pins.
-        type PIN = PIND;
-        /// PD0
-        const MASK: u8 = 1<<0;
-    }
+	impl Pin for D0 {
+			/// Port D Data Register.
+			type PORT = PORTD;
+			/// Port D Data Direction Register.
+			type DDR = DDRD;
+			/// Port D Input Pins.
+			type PIN = PIND;
+			/// PD0
+			const MASK: u8 = 1<<0;
+	}
 
-    pub struct D1;
+	pub struct D1;
 
-    impl Pin for D1 {
-        /// Port D Data Register.
-        type PORT = PORTD;
-        /// Port D Data Direction Register.
-        type DDR = DDRD;
-        /// Port D Input Pins.
-        type PIN = PIND;
-        /// PD1
-        const MASK: u8 = 1<<1;
-    }
+	impl Pin for D1 {
+			/// Port D Data Register.
+			type PORT = PORTD;
+			/// Port D Data Direction Register.
+			type DDR = DDRD;
+			/// Port D Input Pins.
+			type PIN = PIND;
+			/// PD1
+			const MASK: u8 = 1<<1;
+	}
 
-    pub struct D2;
+	pub struct D2;
 
-    impl Pin for D2 {
-        /// Port D Data Register.
-        type PORT = PORTD;
-        /// Port D Data Direction Register.
-        type DDR = DDRD;
-        /// Port D Input Pins.
-        type PIN = PIND;
-        /// PD2
-        const MASK: u8 = 1<<2;
-    }
+	impl Pin for D2 {
+			/// Port D Data Register.
+			type PORT = PORTD;
+			/// Port D Data Direction Register.
+			type DDR = DDRD;
+			/// Port D Input Pins.
+			type PIN = PIND;
+			/// PD2
+			const MASK: u8 = 1<<2;
+	}
 
-    pub struct D3;
+	pub struct D3;
 
-    impl Pin for D3 {
-        /// Port D Data Register.
-        type PORT = PORTD;
-        /// Port D Data Direction Register.
-        type DDR = DDRD;
-        /// Port D Input Pins.
-        type PIN = PIND;
-        /// PD3
-        const MASK: u8 = 1<<3;
-    }
+	impl Pin for D3 {
+			/// Port D Data Register.
+			type PORT = PORTD;
+			/// Port D Data Direction Register.
+			type DDR = DDRD;
+			/// Port D Input Pins.
+			type PIN = PIND;
+			/// PD3
+			const MASK: u8 = 1<<3;
+	}
 
-    pub struct D4;
+	pub struct D4;
 
-    impl Pin for D4 {
-        /// Port D Data Register.
-        type PORT = PORTD;
-        /// Port D Data Direction Register.
-        type DDR = DDRD;
-        /// Port D Input Pins.
-        type PIN = PIND;
-        /// PD4
-        const MASK: u8 = 1<<4;
-    }
+	impl Pin for D4 {
+			/// Port D Data Register.
+			type PORT = PORTD;
+			/// Port D Data Direction Register.
+			type DDR = DDRD;
+			/// Port D Input Pins.
+			type PIN = PIND;
+			/// PD4
+			const MASK: u8 = 1<<4;
+	}
 
-    pub struct D5;
+	pub struct D5;
 
-    impl Pin for D5 {
-        /// Port D Data Register.
-        type PORT = PORTD;
-        /// Port D Data Direction Register.
-        type DDR = DDRD;
-        /// Port D Input Pins.
-        type PIN = PIND;
-        /// PD5
-        const MASK: u8 = 1<<5;
-    }
+	impl Pin for D5 {
+			/// Port D Data Register.
+			type PORT = PORTD;
+			/// Port D Data Direction Register.
+			type DDR = DDRD;
+			/// Port D Input Pins.
+			type PIN = PIND;
+			/// PD5
+			const MASK: u8 = 1<<5;
+	}
 
-    pub struct D6;
+	pub struct D6;
 
-    impl Pin for D6 {
-        /// Port D Data Register.
-        type PORT = PORTD;
-        /// Port D Data Direction Register.
-        type DDR = DDRD;
-        /// Port D Input Pins.
-        type PIN = PIND;
-        /// PD6
-        const MASK: u8 = 1<<6;
-    }
+	impl Pin for D6 {
+			/// Port D Data Register.
+			type PORT = PORTD;
+			/// Port D Data Direction Register.
+			type DDR = DDRD;
+			/// Port D Input Pins.
+			type PIN = PIND;
+			/// PD6
+			const MASK: u8 = 1<<6;
+	}
 
-    pub struct D7;
+	pub struct D7;
 
-    impl Pin for D7 {
-        /// Port D Data Register.
-        type PORT = PORTD;
-        /// Port D Data Direction Register.
-        type DDR = DDRD;
-        /// Port D Input Pins.
-        type PIN = PIND;
-        /// PD7
-        const MASK: u8 = 1<<7;
-    }
+	impl Pin for D7 {
+			/// Port D Data Register.
+			type PORT = PORTD;
+			/// Port D Data Direction Register.
+			type DDR = DDRD;
+			/// Port D Input Pins.
+			type PIN = PIND;
+			/// PD7
+			const MASK: u8 = 1<<7;
+	}
+
+		pub struct F0;
+
+	impl Pin for F0 {
+		/// Port B Data Register.
+		type PORT = PORTF;
+		/// Port B Data Direction Register.
+		type DDR = DDRF;
+		/// Port B Input Pins.
+		type PIN = PINF;
+		/// PB0
+		const MASK: u8 = 1<<0;
+	}
+
+	pub struct F1;
+
+	impl Pin for F1 {
+		/// Port B Data Register.
+		type PORT = PORTF;
+		/// Port B Data Direction Register.
+		type DDR = DDRF;
+		/// Port B Input Pins.
+		type PIN = PINF;
+		/// PB1
+		const MASK: u8 = 1<<1;
+	}
+
+	pub struct F2;
+
+	impl Pin for F2 {
+			/// Port B Data Register.
+			type PORT = PORTF;
+			/// Port B Data Direction Register.
+			type DDR = DDRF;
+			/// Port B Input Pins.
+			type PIN = PINF;
+			/// PB2
+			const MASK: u8 = 1<<2;
+	}
+
+	pub struct F3;
+
+	impl Pin for F3 {
+			/// Port B Data Register.
+			type PORT = PORTF;
+			/// Port B Data Direction Register.
+			type DDR = DDRF;
+			/// Port B Input Pins.
+			type PIN = PINF;
+			/// PB3
+			const MASK: u8 = 1<<3;
+	}
+
+	pub struct F4;
+
+	impl Pin for F4 {
+			/// Port B Data Register.
+			type PORT = PORTF;
+			/// Port B Data Direction Register.
+			type DDR = DDRF;
+			/// Port B Input Pins.
+			type PIN = PINF;
+			/// PB4
+			const MASK: u8 = 1<<4;
+	}
+
+	pub struct F5;
+
+	impl Pin for F5 {
+			/// Port B Data Register.
+			type PORT = PORTF;
+			/// Port B Data Direction Register.
+			type DDR = DDRF;
+			/// Port B Input Pins.
+			type PIN = PINF;
+			/// PB5
+			const MASK: u8 = 1<<5;
+	}
+
+	pub struct F6;
+
+	impl Pin for F6 {
+			/// Port B Data Register.
+			type PORT = PORTF;
+			/// Port B Data Direction Register.
+			type DDR = DDRF;
+			/// Port B Input Pins.
+			type PIN = PINF;
+			/// PB6
+			const MASK: u8 = 1<<6;
+	}
+
+	pub struct F7;
+
+	impl Pin for F7 {
+			/// Port B Data Register.
+			type PORT = PORTF;
+			/// Port B Data Direction Register.
+			type DDR = DDRF;
+			/// Port B Input Pins.
+			type PIN = PINF;
+			/// PB7
+			const MASK: u8 = 1<<7;
+	}
 
 
 }
